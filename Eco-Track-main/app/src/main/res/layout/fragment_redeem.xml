@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#02542D">
+
+        <!-- Top Banner -->
+        <ImageView
+            android:id="@+id/topBanner"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:scaleType="centerCrop"
+            android:contentDescription="Top Banner"
+            android:src="@drawable/banner"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintHeight_percent="0.25" />
+
+        <TextView
+            android:id="@+id/textView36"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:text="Reward"
+            android:textSize="25sp"
+            android:textColor="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+
+
+        <LinearLayout
+            android:id="@+id/iconLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="253dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintTop_toBottomOf="@id/topBanner">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginEnd="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/coinsIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Coins Icon"
+                    android:src="@drawable/coins" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Coins"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/couponsIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Coupons Icon"
+                    android:src="@drawable/coupons" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Coupons"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:layout_marginStart="0dp"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/otherIcon"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:contentDescription="Other Icon"
+                    android:src="@drawable/gift" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:gravity="center"
+                    android:text="Other"
+                    android:textColor="@android:color/white"
+                    android:textSize="14sp" />
+            </LinearLayout>
+
+        </LinearLayout>
+
+        <!-- Discounts Section -->
+        <TextView
+            android:id="@+id/discountsText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Discounts"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:textStyle="bold"
+            android:shadowColor="@color/black"
+            android:textColor="@android:color/white"
+            android:layout_marginTop="16dp"
+            android:shadowDx="0"
+            android:shadowDy="6"
+            android:shadowRadius="2"
+            app:layout_constraintTop_toBottomOf="@id/iconLayout"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+        <!-- Grid Layout for Discounts -->
+        <GridLayout
+            android:id="@+id/discountCardsGrid"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="3"
+            android:columnCount="2"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="10dp"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/discountsText"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent">
+
+            <!-- Discount Card 1 -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/myre"
+                    android:contentDescription="Discount Card" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button11"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="bottom|center"
+                    android:background="@drawable/redm"
+                    android:drawableLeft="@drawable/leaf"
+                    android:paddingStart="10dp"
+                    android:text="460"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- Discount Card 2 -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="30dp"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/flre"
+                    android:contentDescription="Discount Card" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button13"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="bottom|center"
+                    android:background="@drawable/redm"
+                    android:drawableLeft="@drawable/leaf"
+                    android:paddingStart="10dp"
+                    android:text="520"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- Discount Card 3 -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="30dp"
+                android:layout_marginTop="20dp"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:contentDescription="Discount Card"
+                    android:src="@drawable/amre" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button14"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="bottom|center"
+                    android:background="@drawable/redm"
+                    android:drawableLeft="@drawable/leaf"
+                    android:paddingStart="10dp"
+                    android:text="720"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- Discount Card 4 -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="16dp"
+                android:layout_rowSpan="1"
+                android:layout_marginTop="20dp"
+                android:layout_columnSpan="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/rbew"
+                    android:contentDescription="Discount Card" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button15"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="bottom|center"
+                    android:background="@drawable/redm"
+                    android:drawableLeft="@drawable/leaf"
+                    android:paddingStart="10dp"
+                    android:text="520"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- Discount Card 5 -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="16dp"
+                android:layout_rowSpan="1"
+                android:layout_marginTop="20dp"
+                android:layout_columnSpan="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/spre"
+                    android:contentDescription="Discount Card" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button16"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="bottom|center"
+                    android:background="@drawable/redm"
+                    android:drawableLeft="@drawable/leaf"
+                    android:paddingStart="10dp"
+                    android:text="390"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+            <!-- Discount Card 6 -->
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginTop="20dp"
+                android:layout_rowSpan="1"
+                android:layout_columnSpan="1">
+
+                <ImageView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/redemed"
+                    android:contentDescription="Discount Card" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/button17"
+                    android:layout_width="60dp"
+                    android:layout_height="22dp"
+                    android:layout_gravity="bottom|center"
+                    android:background="@drawable/redm"
+                    android:drawableLeft="@drawable/leaf"
+                    android:paddingStart="10dp"
+                    android:text="420"
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </FrameLayout>
+
+        </GridLayout>
+
+        <!-- View All Button -->
+
+        <!-- Bottom Navigation -->
+
+        <Button
+            android:id="@+id/viewAllVouchersButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:backgroundTint="@color/white"
+            android:text="View All Vouchers"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/discountCardsGrid" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button9"
+            android:layout_width="wrap_content"
+            android:layout_height="22dp"
+            android:layout_marginTop="150dp"
+            android:textColor="@color/black"
+            android:background="@drawable/redm"
+            android:drawableLeft="@drawable/leaf"
+            android:paddingStart="10dp"
+            android:text="1120"
+            android:textSize="15sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.498"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView36" />
+
+        <ImageView
+            android:id="@+id/notifi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:layout_marginEnd="16dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/dorbell1" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</ScrollView>

@@ -1,0 +1,443 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".EcoFragment">
+
+        <ImageView
+            android:id="@+id/backtoinsight"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="40dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/baseline_arrow_back_24" />
+
+        <TextView
+            android:id="@+id/textView15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="Activity"
+            android:textColor="@color/black"
+            android:layout_marginLeft="150dp"
+            android:textSize="30sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView16"
+            android:layout_width="204dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:layout_marginLeft="25dp"
+            android:text="Activity Tracking"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:id="@+id/button2"
+            android:layout_width="315dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginStart="25dp"
+            android:background="@drawable/color"
+            android:orientation="horizontal"
+            android:gravity="center">
+
+            <ImageView
+                android:id="@+id/icon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/visit"
+                android:contentDescription="Travel Icon" />
+
+            <TextView
+                android:id="@+id/text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Travel"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/dropdownTravel"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/inputCar"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Distance by Car (km)"
+                android:textColor="@color/black"
+                android:textColorHint="#a9a9a9"
+                android:textSize="15sp"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/inputBike"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Distance by Bike (km)"
+                android:textColorHint="#a9a9a9"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+
+            <EditText
+                android:id="@+id/inputPublicTransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Distance by Public Transport (km)"
+                android:textColorHint="#a9a9a9"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+
+            <EditText
+                android:id="@+id/inputTrainTransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Distance by Train Transport (km)"
+                android:textColorHint="#a9a9a9"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+            <EditText
+                android:id="@+id/inputElectricTransport"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Distance by Electric Vehical Transport (km)"
+                android:textColorHint="#a9a9a9"
+                android:textColor="@color/black"
+                android:inputType="numberDecimal"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubmitTravel"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="@drawable/colorforwallet"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCameraUpload"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:background="@drawable/colorforwallet"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:onClick="openCamera"/>
+
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/button3"
+            android:layout_width="315dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/color"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginStart="25dp">
+
+            <ImageView
+                android:id="@+id/energy"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/renewable"
+                android:contentDescription="Energy Usage Icon" />
+
+            <TextView
+                android:id="@+id/usage"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Energy Usage"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/dropdownEnergyUsage"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="gone"
+            android:layout_marginTop="16dp"
+            android:padding="16dp">
+
+            <EditText
+                android:id="@+id/inputelectricity"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:hint="Electricity Bill"
+                android:textColorHint="#a9a9a9"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:inputType="numberDecimal" />
+
+            <EditText
+                android:id="@+id/inputgas"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Gas"
+                android:textColorHint="#a9a9a9"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+
+            <EditText
+                android:id="@+id/inputsolar"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Solar consumption"
+                android:textColorHint="#a9a9a9"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+            <EditText
+                android:id="@+id/inputAirConditioner"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Air Conditioner consumption (in hours)"
+                android:textColorHint="#a9a9a9"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+
+            <EditText
+                android:id="@+id/inputHeater"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Heater consumption (in hours)"
+                android:textColorHint="#a9a9a9"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+            <EditText
+                android:id="@+id/inputWashingMachine"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Washing Machine consumption"
+                android:textColorHint="#a9a9a9"
+                android:inputType="numberDecimal"
+                android:textColor="@color/black"
+                android:textSize="15sp"
+                android:layout_marginTop="6dp" />
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonSubmitEnergy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Submit"
+                android:background="@drawable/colorforwallet"
+                android:layout_marginTop="16dp"
+                android:layout_gravity="center"  />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/buttonCameraUpload1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Upload Image"
+                android:background="@drawable/colorforwallet"
+                android:textSize="10sp"
+                android:textColor="@color/white"
+                android:layout_marginTop="12dp"
+                android:layout_gravity="center"
+                android:onClick="openCamera"/>
+
+        </LinearLayout>
+
+        <androidx.appcompat.widget.LinearLayoutCompat
+            android:id="@+id/button4"
+            android:layout_width="315dp"
+            android:layout_height="51dp"
+            android:layout_marginTop="28dp"
+            android:background="@drawable/color"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginStart="25dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/button3">
+
+            <ImageView
+                android:id="@+id/carbo"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:src="@drawable/carbohydrates"
+                android:contentDescription="Energy Usage Icon" />
+
+            <TextView
+                android:id="@+id/diet"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="8dp"
+                android:text="Diet"
+                android:textColor="@color/white"
+                android:textSize="16sp" />
+        </androidx.appcompat.widget.LinearLayoutCompat>
+
+        <TextView
+            android:id="@+id/textView17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Realtime Carbon Footprint"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Travel"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="25dp"
+            android:text="Emissions: 2.5 tons of CO2"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Energy Usage"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="25dp"
+            android:text="Emissions: 1.8 tons of CO2"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:text="Diet"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="25dp"
+            android:text="Emissions: 1.2 tons of CO2"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Tips and Recommendations"
+            android:layout_marginLeft="25dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView25"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="25dp"
+            android:text="Reduce your car usage by opting for public \ntransport or carpooling to lower your carbon \nfootprint."
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button7"
+            android:layout_width="74dp"
+            android:layout_height="32dp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="8dp"
+            android:drawableLeft="@drawable/link"
+            android:text="Read article"
+            android:textSize="6sp" />
+
+        <TextView
+            android:id="@+id/textView26"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="25dp"
+            android:text="Reduce your car usage by opting for public \ntransport or carpooling to lower your carbon \nfootprint."
+            android:textColor="@color/black" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/button6"
+            android:layout_width="74dp"
+            android:layout_height="32dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginLeft="25dp"
+            android:drawableLeft="@drawable/link"
+            android:text="Learn more"
+            android:textSize="6sp" />
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:layout_gravity="center" />
+
+
+
+    </LinearLayout>
+</ScrollView>

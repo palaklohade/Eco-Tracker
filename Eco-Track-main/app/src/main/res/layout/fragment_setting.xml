@@ -1,0 +1,383 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SettingFragment">
+
+    <TextView
+        android:id="@+id/textView30"
+        android:layout_width="415dp"
+        android:layout_height="71dp"
+        android:background="#02542D"
+        android:gravity="center_vertical"
+        android:text="\tSetting"
+        android:paddingStart="60dp"
+        android:textColor="@color/white"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/button5"
+        android:layout_width="380dp"
+        android:layout_height="77dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/white"
+        android:drawableLeft="@drawable/profile"
+        android:gravity="center_vertical"
+        android:paddingLeft="20dp"
+        android:text="\t\t\tProfile"
+        android:textColor="@color/black"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView30" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton2"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginEnd="64dp"
+        android:background="@drawable/baseline_qr_code_24"
+        app:layout_constraintBottom_toBottomOf="@+id/button5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="@+id/button5"
+        app:layout_constraintTop_toBottomOf="@+id/textView30"
+        app:layout_constraintVertical_bias="0.562" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/appCompatButton"
+        android:layout_width="36dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/baseline_add_circle_24"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.428"
+        app:layout_constraintStart_toEndOf="@+id/appCompatButton2"
+        app:layout_constraintTop_toTopOf="@+id/button5" />
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="410dp"
+        android:layout_height="736dp"
+        android:layout_marginTop="4dp"
+        android:paddingStart="60dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button5">
+
+        <!-- Account Button Layout -->
+
+
+        <RelativeLayout
+            android:id="@+id/accountButton"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <!-- Icon for Account -->
+            <ImageView
+                android:id="@+id/accountIcon"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/baseline_key_24" />
+
+            <!-- Main Text -->
+            <TextView
+                android:id="@+id/accountText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/accountIcon"
+                android:text="Account"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Subtext -->
+            <TextView
+                android:id="@+id/accountSubText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountText"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/accountIcon"
+                android:text="Security notifications, change number"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/accountButton1"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountButton">
+
+            <!-- Icon for Account -->
+            <ImageView
+                android:id="@+id/lock"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/baseline_lock_24" />
+
+            <!-- Main Text -->
+            <TextView
+                android:id="@+id/accountText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="12dp"
+                android:layout_toEndOf="@id/lock"
+                android:text="Privacy"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Subtext -->
+            <TextView
+                android:id="@+id/accountSubText1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountText1"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/lock"
+                android:text="Security notifications, change number"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/accountButton2"
+            android:layout_width="344dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountButton1">
+
+            <!-- Icon for Account -->
+
+            <ImageView
+                android:id="@+id/avatar"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/baseline_looks_free_24" />
+
+            <!-- Main Text -->
+            <TextView
+                android:id="@+id/accountText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/avatar"
+                android:text="Avatar"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Subtext -->
+            <TextView
+                android:id="@+id/accountSubText2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountText2"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/avatar"
+                android:text="Security notifications, change number"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/accountButton3"
+            android:layout_width="344dp"
+            android:layout_height="68dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountButton2">
+
+            <!-- Icon for Account -->
+
+            <ImageView
+                android:id="@+id/help"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/baseline_question_mark_24" />
+
+            <!-- Main Text -->
+            <TextView
+                android:id="@+id/accountText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/help"
+                android:text="Help"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Subtext -->
+            <TextView
+                android:id="@+id/accountSubText3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountText3"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/help"
+                android:text="Help center, Contact us, Privacy Policy"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/accountButton4"
+            android:layout_width="344dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountButton3">
+
+            <!-- Icon for Account -->
+
+            <ImageView
+                android:id="@+id/notification"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/dorbell" />
+
+            <!-- Main Text -->
+            <TextView
+                android:id="@+id/accountText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/notification"
+                android:text="Notification"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Subtext -->
+            <TextView
+                android:id="@+id/accountSubText4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountText4"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/notification"
+                android:text="Security notifications, change number"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/accountButton5"
+            android:layout_width="344dp"
+            android:layout_height="65dp"
+            android:layout_marginTop="20dp"
+            android:background="@color/white"
+            android:clickable="true"
+            android:focusable="true"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.615"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/accountButton4">
+
+            <!-- Icon for Account -->
+
+            <ImageView
+                android:id="@+id/approved"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="16dp"
+                android:src="@drawable/baseline_approved_shortcut_24" />
+
+            <!-- Main Text -->
+            <TextView
+                android:id="@+id/accountText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="10dp"
+                android:layout_toEndOf="@id/approved"
+                android:text="App Update"
+                android:textColor="@android:color/black"
+                android:textSize="16sp" />
+
+            <!-- Subtext -->
+            <TextView
+                android:id="@+id/accountSubText5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/accountText5"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="4dp"
+                android:layout_toEndOf="@id/approved"
+                android:text="Security notifications, change number"
+                android:textColor="@android:color/darker_gray"
+                android:textSize="14sp" />
+        </RelativeLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+

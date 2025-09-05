@@ -1,0 +1,27 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/home"
+        android:icon="@drawable/baseline_home_24"
+        android:title="Home" />
+
+    <item
+        android:id="@+id/group"
+        android:icon="@drawable/baseline_groups_24"
+        android:title="Group" />
+
+    <item
+        android:id="@+id/eco"
+        android:icon="@drawable/icon"
+        android:title="Eco" />
+
+    <item
+        android:id="@+id/insight"
+        android:icon="@drawable/baseline_insights_24"
+        android:title="Insight" />
+
+    <item
+        android:id="@+id/setting"
+        android:icon="@drawable/baseline_account_balance_wallet_24"
+        android:title="Wallet" />
+</menu>

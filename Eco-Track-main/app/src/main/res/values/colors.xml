@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="custom_color">#02542D</color>
+    <color name="nav_item_icon_color">#02542D</color>
+    <color name="Electricity">#596EEF</color>
+    <color name="Gas">#F6869E</color>
+    <color name="Water">#28D5B3</color>
+
+
+    <color name="green">#02542D</color>
+    <color name="grey">#616161</color>
+
+    <color name="red">#D00F0F</color>
+
+    <color name="blue">#2196F3</color>
+
+    <color name="gray_400">#D1D5DB</color>
+    <color name="gold">#FFD700</color>
+    <color name="silver">#C0C0C0</color>
+    <color name="blue_600">#2563EB</color>
+
+
+
+    <color name="text_secondary">#757575</color>
+
+
+
+</resources>

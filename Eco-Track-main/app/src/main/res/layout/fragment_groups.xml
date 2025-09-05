@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".GroupsFragment">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="-154dp">
+
+        <RelativeLayout
+            android:id="@+id/accountButton"
+            android:layout_width="418dp"
+            android:layout_height="249dp"
+            android:background="@drawable/color2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+
+            <TextView
+                android:id="@+id/textView39"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="48dp"
+                android:text="Hi Prime"
+                android:textColor="@color/white"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView40"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="81dp"
+                android:text="Connect to People"
+                android:textColor="@color/white"
+                android:textSize="13sp"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:layout_editor_absoluteY="82dp" />
+
+            <androidx.appcompat.widget.SearchView
+                android:id="@+id/searchView"
+                android:layout_width="272dp"
+                android:layout_height="42dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="73dp"
+                android:theme="@style/CustomEditTextTheme"
+                android:background="@drawable/searchbox2"
+                android:iconifiedByDefault="false"
+                android:padding="10dp"
+                android:queryHint="Search here..."
+                android:textColor="#000000"  />
+
+
+            <ImageView
+                android:id="@+id/imageView10"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="40dp"
+                android:layout_marginEnd="53dp"
+                android:layout_marginBottom="80dp"
+                android:layout_toEndOf="@+id/searchView"
+                android:src="@drawable/baseline_group_add_24"
+                tools:layout_editor_absoluteX="351dp"
+                tools:layout_editor_absoluteY="115dp" />
+
+            <ImageView
+                android:id="@+id/backtocommunity"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="21dp"
+                android:src="@drawable/baseline_arrow_back_white_24" />
+
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/relativeLayout2"
+            android:layout_width="215dp"
+            android:layout_height="131dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="220dp"
+            android:background="@drawable/comminity"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="wrap_content"
+                android:layout_height="38dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="21dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textView42"
+                android:layout_width="125dp"
+                android:layout_height="wrap_content"
+                android:layout_alignEnd="@+id/imageView11"
+                android:layout_marginStart="6dp"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="-131dp"
+                android:layout_toEndOf="@+id/imageView11"
+                android:textColor="@color/black"
+                android:text=" Creative kumar" />
+
+            <TextView
+                android:id="@+id/textView43"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="62dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="72dp"
+                android:text="New on EcoSystem " />
+
+            <TextView
+                android:id="@+id/textView44"
+                android:layout_width="189dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="17dp"
+                android:layout_marginBottom="29dp"
+                android:textColor="@color/black"
+                android:text="been working between lecture hehe\nbeen working between lecture hehe"
+                android:textSize="10sp" />
+
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/textView41"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="17dp"
+            android:layout_marginBottom="327dp"
+            android:text="Explore Communities "
+            android:textColor="@color/black"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            app:layout_constraintStart_toStartOf="parent" />
+
+
+        <RelativeLayout
+            android:id="@+id/textView45"
+            android:layout_width="331dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="252dp"
+            android:background="@drawable/comminity"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textView46"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="58dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="27dp"
+                android:text="Green Forest NGO" />
+
+            <TextView
+                android:id="@+id/textView47"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/black"
+                android:text="Be Creative and join for good social work."
+                android:textSize="10sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button13"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="146dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toEndOf="@+id/textView46"
+                android:background="@drawable/baseline_add_24"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/textView50"
+            android:layout_width="331dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="15dp"
+            android:layout_marginEnd="14dp"
+            android:layout_marginBottom="191dp"
+            android:background="@drawable/comminity"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView13"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textView48"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="58dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="27dp"
+                android:text="Green Forest NGO" />
+
+            <TextView
+                android:id="@+id/textView49"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="6dp"
+                android:textColor="@color/black"
+                android:text="Be Creative and join for good social work."
+                android:textSize="10sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button14"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="146dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toEndOf="@+id/textView48"
+                android:background="@drawable/baseline_add_24"
+                android:text="" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/textView51"
+            android:layout_width="331dp"
+            android:layout_height="52dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="14dp"
+            android:layout_marginEnd="15dp"
+            android:layout_marginBottom="127dp"
+            android:background="@drawable/comminity"
+            app:layout_constraintStart_toStartOf="parent">
+
+            <ImageView
+                android:id="@+id/imageView14"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginBottom="11dp"
+                android:src="@drawable/profile" />
+
+            <TextView
+                android:id="@+id/textView52"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="58dp"
+                android:textColor="@color/black"
+                android:layout_marginBottom="27dp"
+                android:text="Green Forest NGO" />
+
+            <TextView
+                android:id="@+id/textView53"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentBottom="true"
+                android:textColor="@color/black"
+                android:layout_marginStart="60dp"
+                android:layout_marginBottom="6dp"
+                android:text="Be Creative and join for good social work."
+                android:textSize="10sp" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/button15"
+                android:layout_width="10dp"
+                android:layout_height="10dp"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="146dp"
+                android:layout_marginTop="11dp"
+                android:layout_marginEnd="12dp"
+                android:layout_marginBottom="7dp"
+                android:layout_toEndOf="@+id/textView52"
+                android:background="@drawable/baseline_add_24"
+                android:text="" />
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,68 @@
+{
+  "project_info": {
+    "project_number": "789861911827",
+    "firebase_url": "https://ecotrackk-default-rtdb.firebaseio.com",
+    "project_id": "ecotrackk",
+    "storage_bucket": "ecotrackk.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789861911827:android:3154c3694dd372b096dee6",
+        "android_client_info": {
+          "package_name": "com.example.EcoTrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_Po3_MzqQEi8KT302IkycQku1jsx2UuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789861911827:android:117caa9ab589ac1c96dee6",
+        "android_client_info": {
+          "package_name": "com.example.ecotrack"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_Po3_MzqQEi8KT302IkycQku1jsx2UuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:789861911827:android:44c8f0d7d25a036696dee6",
+        "android_client_info": {
+          "package_name": "com.example.prime"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB_Po3_MzqQEi8KT302IkycQku1jsx2UuE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

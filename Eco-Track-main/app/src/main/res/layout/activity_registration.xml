@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="16dp">
+
+        <!-- Logo ImageView above Sign Up Text -->
+        <ImageView
+            android:id="@+id/app_logo"
+            android:layout_width="133dp"
+            android:layout_height="133dp"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            app:srcCompat="@drawable/applogo" />
+
+        <!-- Sign Up Text -->
+        <TextView
+            android:id="@+id/login_txt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/app_logo"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="16dp"
+            android:gravity="center"
+            android:text="Sign Up"
+            android:textStyle="bold"
+            android:textSize="34sp"
+            android:textColor="@android:color/black" />
+
+        <!-- Name Layout -->
+        <LinearLayout
+            android:id="@+id/name_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/login_txt"
+            android:layout_marginTop="24dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/name"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Name"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/name_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Name"
+                android:textColorHint="@color/black"
+                android:inputType="text" />
+        </LinearLayout>
+
+        <!-- Email Layout -->
+        <LinearLayout
+            android:id="@+id/mail_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/name_layout"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/email"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/email_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Email"
+                android:textColorHint="@color/black"
+                android:inputType="textEmailAddress" />
+        </LinearLayout>
+
+        <!-- Password Layout -->
+        <LinearLayout
+            android:id="@+id/password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/mail_layout"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Password"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/pass_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter your Password"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <!-- Confirm Password Layout -->
+        <LinearLayout
+            android:id="@+id/confirm_password_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/password_layout"
+            android:layout_marginTop="16dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/confirm_password"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Confirm Password"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="20sp" />
+
+            <EditText
+                android:id="@+id/cnfrm_pass_txt"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Confirm your Password"
+                android:textColorHint="@color/black"
+                android:inputType="textPassword" />
+        </LinearLayout>
+
+        <!-- Submit Button -->
+        <Button
+            android:id="@+id/reg_button"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/confirm_password_layout"
+            android:layout_marginTop="24dp"
+            android:backgroundTint="#02542D"
+            android:text="Sign Up"
+            android:textColor="@android:color/white" />
+    </RelativeLayout>
+
+</ScrollView>
